@@ -1,0 +1,245 @@
+.card {
+    padding: 20px 40px;
+    text-align: center;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+  
+  .card-container{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+  }
+  
+  /* .card-carousel{
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+  } */
+   
+  .card-wrapper {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    
+  }
+  .addon-card {
+    box-shadow: 0 3px 3px grey;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid #bf8aab;
+    border: 2px solid #e9ac2a;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+  
+  }
+  h3.title{
+    color: #e9ac2a;
+  }
+  .subtitle{
+    margin-bottom: 15px;
+  }
+  .btn-one,.btn-two {
+    display: inline-block;
+      border: 1px solid black;
+      padding: 10px 20px;
+      font-size: 12px;
+    margin-bottom: 10px;
+      border-radius: 5px;
+    transition: 0.4s;
+  
+  }
+  .btn-one:hover,
+  .btn-two:hover {
+    background-color: #e9ac2a;
+    border: 1px solid transparent;
+    color: white;
+  }
+  .btn-two{
+    margin-left: 10px;
+  }
+  .card-container .slick-list {
+       overflow: hidden; 
+  }
+  
+  .slick-dots li button {
+    display: none;
+  }
+  .slick-dots {
+    list-style: none;
+    text-align: center;
+    
+  }
+  .slick-dots li {
+    margin: 0 5px;
+    width: 40px;
+    height: 5px;
+    background-color: grey;
+    display: inline-block;
+  }
+  .slick-dots li.slick-active{
+  background-color: red;
+  }
+  
+  /* bug fixed */
+  
+  
+  /* hover team member section start */
+  
+  .section-heading {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .section-heading h4 {
+    font-size: 20px;
+  }
+  
+  .section-heading h2 {
+    font-size: 45px;
+  }
+  
+  .team-members {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  /* .single-tema-member-inner {
+      
+  } */
+  
+  .single-team-member-wrapper {
+    box-sizing: border-box;
+    width: 32%;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    min-width: 250px;
+  }
+  .single-tema-member-inner {
+  position: relative;
+    transition: 0.5s;
+    min-height: 320px;
+    background-color: black;
+  
+  }
+  
+  .t-image {
+    text-align: center;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .t-image img {
+    border-radius: 50%;
+  }
+  
+  
+  
+  .team-member-hover-part {
+    background-color: black;
+    color: white;
+    border-top: 5px solid red;
+  
+  
+  }
+  
+  .team-member-info {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    padding-bottom: 60px;
+    border-top: 5px solid red;
+  }
+  
+  .tm-name {
+    font-size: 25px;
+    color: #fff;
+  }
+  
+  .tm-designation {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .tm-meta-info span {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  .tm-meta-info svg {
+    width: 20px;
+    color: white;
+  }
+  .team-member-hover-part {
+    padding: 20px;
+  }
+  .single-meta a {
+  margin-left: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  }
+  .tm-details {
+  margin-top: 15px;
+  }
+  
+  .tm-meta-info p.single-meta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .single-team-member-wrapper{
+    overflow: hidden;
+  }
+  .team-member-hover-part {
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+    transition: 0.5s;
+  /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    
+  }
+  
+  .single-team-member-wrapper:hover .team-member-hover-part{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;   
+  
+  }
+  
+  .team-member-hover-part .team-member-info {
+  
+    border-top: unset;
+    padding: unset;
+    margin-bottom: 20px;
+  
+  }
+  .tm-details p {
+  line-height: 1.5rem;
+  color: white;
+  font-size: 14px;
+  }
+  
+  
+  
+  /* firefox bugs with simple translator */
+  .simple-translate-system-theme {
+	display: none;
+}
+.carousel-class .item {
+	text-align: center;
+}

@@ -1,0 +1,21 @@
+.elementor-widget-container {
+	width: 100%;
+	height: auto;
+	max-width: 768px;
+	background-color: transparent;
+	margin: 0 auto;
+	padding: 20px;
+	padding-top: 60px;
+}
+
+
+.quote {
+	margin-top: 0px;
+	line-height: 76px;
+	overflow: hidden;
+    
+}
+
+.split-line {
+	overflow: hidden;
+}
