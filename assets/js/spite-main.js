@@ -80,41 +80,49 @@
 // }
 
 /******
- * 
+ *
  * Fixing Final
- * 
+ *
  ******/
 
-const quotes = document.querySelectorAll(".quote");
+// const quotes = document.querySelectorAll(".quote");
 
-function setupSplits() {
-	quotes.forEach((quote) => {
-		// Reset if needed
-		if (quote.anim) {
-			quote.anim.progress(1).kill();
-			quote.split.revert();
-		}
+// function setupSplits() {
+// 	quotes.forEach((quote) => {
+// 		// Reset if needed
+// 		if (quote.anim) {
+// 			quote.anim.progress(1).kill();
+// 			quote.split.revert();
+// 		}
 
-		quote.split = new SplitText(quote, {
-			type: "lines,words,chars",
-			linesClass: "split-line",
-		});
+// 		quote.split = new SplitText(quote, {
+// 			type: "lines,words,chars",
+// 			linesClass: "split-line",
+// 		});
 
-		// Set up the anim with ScrollTrigger for the first scroll
-		ScrollTrigger.create({
-			trigger: quote,
-			animation: gsap.from(quote.split.chars, {
-				duration: 0.6,
-				ease: "circ.out",
-				y: 100,
-				// stagger: 0.02 
-			}),
-			once: true, // Only play the animation once
-		});
-	});
-}
+// 		// Set up the anim with ScrollTrigger for the first scroll
+// 		ScrollTrigger.create({
+// 			trigger: quote,
+// 			animation: gsap.from(quote.split.chars, {
+// 				duration: 0.6,
+// 				ease: "circ.out",
+// 				y: 100,
+// 				// stagger: 0.02
+// 			}),
+// 			once: true, // Only play the animation once
+// 		});
+// 	});
+// }
 
-gsap.config({ trialWarn: false });
+// gsap.config({ trialWarn: false });
 
-// Call setupSplits on page load
-window.addEventListener("load", setupSplits);
+// // Call setupSplits on page load
+// window.addEventListener("load", setupSplits);
+
+const splitText = new SplitType(".quote");
+gsap.to(".char", {
+	y: 0,
+	stagger: 0.1,
+	delay: 0.2,
+	duration: 0.1,
+});

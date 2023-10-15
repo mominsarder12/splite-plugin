@@ -50,7 +50,7 @@ function plugin_scripts_enqueue()
 
 	wp_enqueue_script('ms_custom_gspa-main', plugins_url('/assets/js/gsap-beta.min.js', __FILE__), array(), '1.0.0', true);
 	wp_enqueue_script('ms_custom-scroll-triger', plugins_url('/assets/js/gsap-scroll-triger.min.js', __FILE__), array(), '1.0.0', true);
-	wp_enqueue_script('ms_custom-split-text', plugins_url('/assets/js/gspa-splittext.min.js', __FILE__), array(), '1.0.0', true);
+	wp_enqueue_script('ms_custom-split-text', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js', array(), '1.0.0', true);
 	wp_enqueue_script('ms_custom-split-main', plugins_url('/assets/js/spite-main.js', __FILE__), array(), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'plugin_scripts_enqueue');
